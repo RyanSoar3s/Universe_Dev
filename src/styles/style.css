@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+:root {
+    /* COLORS */
+    --c1: #46b1c9;
+    --c2: #262fcb;
+    --c3: #29339b;
+    --c4: #e223c2;
+    --c5: #6c0a66;
+
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
