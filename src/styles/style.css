@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
 :root {
     /* COLORS */
-    --c1: #46b1c9;
-    --c2: #262fcb;
-    --c3: #29339b;
-    --c4: #e223c2;
+    --border-color: #46b1c9;
+    --main-color: #262fcb;
+    --background-color-universe: #29339b;
+    --background-color-dev: #e223c2;
     --c5: #6c0a66;
 
 }
@@ -15,5 +17,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+/* GENERAL SETTINGS */
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.flex {
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .1s;
+
+}
+
+a.link:hover {
+    border-bottom: 2px solid var(--border-color);
+
+}
+
+button {
+    cursor: pointer;
+
+}
+
+a, button {
+    font-weight: 600;
+
+}
+
+ul > li {
+    list-style: none;
+
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--background-color-universe);
+    height: 130px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 6px solid var(--border-color);
+    box-shadow: 0px 1px 4px 1px #0000007a;
+
+}
+
+.logo {
+    background: url("../../images/logo.png");
+    background-size: cover;
+    height: 58px;
+    width: 124px;
+
+}
+
+header nav > ul > li {
+    margin: 0px 45px;
+
+}
+
+#search {
+    display: none;
+
+}
+
+.account_area {
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+
+}
+
+.account_area a {
+    align-self: center;
+
+}
+
+/* MAIN */
+
+main {
+
+
+}
+
+#universe {
+    color: var(--main-color);
+
+}
+
+#dev {
+    color: var(--background-color-dev);
 
 }
