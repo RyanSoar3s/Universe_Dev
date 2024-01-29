@@ -4,11 +4,12 @@
 
 :root {
     /* COLORS */
-    --border-color: #46b1c9;
-    --main-color: #262fcb;
-    --background-color-universe: #29339b;
+    --text-color: #46b1c9;
+    --background-color-universe: #262fcb;
+    --main-color: #29339b;;
+    --background-header: #1e2468;
     --background-color-dev: #e223c2;
-    --c5: #6c0a66;
+    /*--c5: #6c0a66;*/
 
 }
 
@@ -31,6 +32,7 @@ html, body {
 
 body {
     font-family: 'Cabin', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -42,12 +44,25 @@ body {
 a {
     text-decoration: none;
     color: white;
-    transition: .1s;
+    position: relative;
 
 }
 
-a.link:hover {
-    border-bottom: 2px solid var(--border-color);
+a.link::after {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: var(--text-color); 
+    height: 2px;
+    width: 0%;
+    transition: .1s ease-in-out;
+
+}
+
+a.link:hover::after {
+    width: 100%;
 
 }
 
@@ -69,12 +84,12 @@ ul > li {
 /* HEADER */
 
 header {
-    background-color: var(--background-color-universe);
+    background-color: var(--background-header);
     height: 130px;
     width: 100vw;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 6px solid var(--border-color);
+    border-bottom: 6px solid var(--text-color);
     box-shadow: 0px 1px 4px 1px #0000007a;
 
 }
@@ -112,16 +127,85 @@ header nav > ul > li {
 /* MAIN */
 
 main {
+    background-color: var(--main-color);
+    height: 100vh;
 
+}
+
+main section {
+    width: 100%;
+    
+}
+
+.container_section {
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.container_content {
+    /* background-color: var(--main-color);
+    max-width: 700px; */
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 10px;
+
+}
+
+.title_section {
+    width: 675px;
+
+}
+
+main h1, main h2 {
+    color: var(--text-color);
+    text-shadow: 3px 1px 3px #00000099;
+
+}
+
+main h1 {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+
+}
+
+main h2 {
+    margin-bottom: 20px;
+
+}
+
+main span {
+    text-shadow: 1px 1px 1px #00000096;
 
 }
 
 #universe {
-    color: var(--main-color);
+    color: var(--background-color-universe);
 
 }
 
 #dev {
     color: var(--background-color-dev);
+
+}
+
+.list {
+    display: inline-block;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px #0000004a;
+
+}
+
+i {
+    width: 22px;
+
+}
+
+.list > ul > li {
+    padding: 0px 10px;
+    line-height: 50px;
+    color: black;
+    /* text-shadow: 1px 1px 1px #00000079; */
 
 }
