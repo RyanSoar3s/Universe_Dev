@@ -9,6 +9,8 @@
     --main-color: #29339b;;
     --background-header: #1e2468;
     --background-color-dev: #e223c2;
+    --title-color: #60e677;
+    --letter-color: #9AB5BA;
     /*--c5: #6c0a66;*/
 
 }
@@ -41,6 +43,11 @@ body {
 
 }
 
+.grid {
+    display: grid;
+
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -54,7 +61,7 @@ a.link::after {
     bottom: 0;
     left: 0;
     content: "";
-    background-color: var(--text-color); 
+    background-color: var(--text-color);
     height: 2px;
     width: 0%;
     transition: .1s ease-in-out;
@@ -128,13 +135,8 @@ header nav > ul > li {
 
 main {
     background-color: var(--main-color);
-    height: 100vh;
+    height: 270vh;
 
-}
-
-main section {
-    width: 100%;
-    
 }
 
 .container_section {
@@ -191,21 +193,86 @@ main span {
 
 .list {
     display: inline-block;
-    background-color: var(--text-color);
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 1px #0000004a;
+    width: 87%;
 
 }
 
-i {
+.list > ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 17px 146px;
+
+}
+
+.list > ul > li.flex {
+    padding-top: 10px;
+
+}
+
+.list > ul .flex {
+    flex-shrink: 50;
+
+}
+
+.list > ul > li > i {
+    position: relative;
+    text-shadow: 2px 2px 1px #00000079;
+    z-index: 1;
+
+}
+
+.list > ul > li > i#icon-tag {
+    top: 34px;
+    left: 14px;
     width: 22px;
 
 }
 
-.list > ul > li {
+.list > ul > li > h1 {
+    display: inline;
+    position: absolute;
+    color: var(--title-color);
+    height: 0px;
+    width: 364px;
+    font-size: 1.8em;
+    padding: 24px 0px 0px 30px;
+    z-index: 1;
+
+}
+
+.list > ul > li > .flex {
+    justify-content: center;
+
+}
+
+
+div.container-list {
+    background-color: #0000000d;
+    height: 134px;
+    width: 391px;
+    clip-path: polygon(0% 515%, 115% 0%, 0% 0%, 0% 0%)
+
+}
+
+.list > ul > li > div.container-list > div.list-content {
+    color: var(--letter-color);
+    background-color: var(--background-color-universe);
+    position: relative;
+    bottom: -1px;
+    left: 1px;
+    height: 130px;
+    width: 387px;
     padding: 0px 10px;
-    line-height: 50px;
-    color: black;
-    /* text-shadow: 1px 1px 1px #00000079; */
+    font-weight: 700;
+    line-height: 36px;
+    clip-path: polygon(0% 517%, 115% 0%, 0% 0%, 0% 0%)
+
+}
+
+
+.list > ul > li > div.container-list > div.list-content > div.content-grid {
+    position: absolute;
+    width: 331px;
+    bottom: 10px;
+    left: 33px;
 
 }
