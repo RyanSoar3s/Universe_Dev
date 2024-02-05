@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe Dev</title>
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="../icons/fontawesome/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body> <!--Colocar metas tag-->
     <header class="flex">
@@ -53,9 +53,9 @@
                     </div>
                     <div>
                         <h2>No <span id="universe">Universe</span> <span id="dev">Dev</span> você: </h2>
-
-                        <div class="list">
-                            <ul class="ul-main grid">
+                        <!-- Quando tiver apenas um elemento por linha, aumentar largura-->
+                        <div class="flex list">
+                            <ul class="grid ul-main">
                                 <!--
                                     Criar uma exibicao semelhante ao do site da alura. 
                                     display: grid;
@@ -64,7 +64,7 @@
                                 -->
                                 <li>
                                     <i id="icon-tag" class="fa-solid fa-code fa-xl" style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
+                                    <h1 id="title-box-1">Aprenderá programação:</h1>
                             
                                     <div class="container-list">
                                         <div class="list-content">
@@ -78,14 +78,28 @@
                                 </li>
                                 <li>
                                     
-                                    <!-- Terá aulas com os <strong>melhores profissionais</strong> de tecnologia do mercado. -->
-                                    <i class="fa-solid fa-book fa-lg"  style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
+                                    <i class="fa-solid fa-book fa-xl"  style="color: #d9c61b;"></i>
+                                    <h1 id="title-box-2">Terá os melhores professores:</h1>
                             
-                                    <div class="flex container-list">
-                                        <div class="flex list-content">
+                                    <div class="container-list">
+                                        <div class="list-content">
                                             <div class="content-grid">
-                                                <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong>
+                                                <!-- <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong> -->
+                                            
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code fa-xl" style="color: #c1cfc6;"></i>
+                                    <h1 id="title-box-3">Terá acesso vitalício:</h1>
+                            
+                                    <div class="container-list">
+                                        <div class="list-content">
+                                            <div class="content-grid">
+                                                <!-- <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong> -->
                                             
                                             </div>
                             
@@ -95,14 +109,13 @@
                                 </li>
                                 <li>
                                     
-                                    <!-- Terá acesso <strong>vitalício</strong> à plataforma. -->
-                                    <i class="fa-solid fa-code fa-xl" style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
+                                    <i class="fa-solid fa-code fa-xl" style="color: #c638d5;"></i>
+                                    <h1 id="title-box-4">Acessará a nossa comunidade:</h1>
                             
                                     <div class="container-list">
                                         <div class="list-content">
                                             <div class="content-grid">
-                                                <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong>
+                                                <!-- <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong> -->
                                             
                                             </div>
                             
@@ -111,32 +124,13 @@
                                 
                                 </li>
                                 <li>
-                                    
-                                    <!-- Terá acesso à nossa <strong>comunidade</strong> de alunos para interções e discursões. -->
                                     <i class="fa-solid fa-code fa-xl" style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
+                                    <h1>Terá mentoria personalizada:</h1>
                             
                                     <div class="container-list">
                                         <div class="list-content">
                                             <div class="content-grid">
-                                                <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong>
-                                            
-                                            </div>
-                            
-                                        </div>
-                                    </div>
-                                
-                                </li>
-                                <li>
-                                    
-                                    <!-- Terá contato com a nossa <strong>mentoria</strong> para tirar possíveis dúvidas. -->
-                                    <i class="fa-solid fa-code fa-xl" style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
-                            
-                                    <div class="container-list">
-                                        <div class="list-content">
-                                            <div class="content-grid">
-                                                <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong>
+                                                <!-- <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong> -->
                                             
                                             </div>
                             
@@ -148,12 +142,12 @@
                                     
                                     <!-- Terá um <strong>certificado</strong> gratuito após a conclusão do curso. -->
                                     <i class="fa-solid fa-code fa-xl" style="color: #60e677;"></i>
-                                    <h1>Aprenderá programação:</h1>
+                                    <h1>Receberá certificado após o curso:</h1>
                             
                                     <div class="container-list">
                                         <div class="list-content">
                                             <div class="content-grid">
-                                                <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong>
+                                                <!-- <strong>Python <i class="fa-brands fa-python fa-lg"></i>, HTML <i class="fa-brands fa-html5 fa-lg"></i>, CSS <i class="fa-brands fa-css3-alt fa-lg"></i>, JavaScript <i class="fa-brands fa-js fa-lg"></i> , PHP <i class="fa-brands fa-php fa-lg"></i> , Banco de dados <i class="fa-solid fa-database fa-lg"></i> e muito mais...</strong> -->
                                             
                                             </div>
                             

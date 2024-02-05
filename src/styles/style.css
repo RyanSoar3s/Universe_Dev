@@ -9,7 +9,10 @@
     --main-color: #29339b;;
     --background-header: #1e2468;
     --background-color-dev: #e223c2;
-    --title-color: #60e677;
+    --title-color-1: #60e677;
+    --title-color-2: #d9c61b;
+    --title-color-3: #c1cfc6;
+    --title-color-4: #c638d5;
     --letter-color: #9AB5BA;
     /*--c5: #6c0a66;*/
 
@@ -149,13 +152,13 @@ main {
     /* background-color: var(--main-color);
     max-width: 700px; */
     margin-top: 40px;
-    margin-left: 20px;
-    padding: 10px;
 
 }
 
 .title_section {
     width: 675px;
+    margin-top: 20px;
+    margin-left: 30px;
 
 }
 
@@ -172,6 +175,7 @@ main h1 {
 }
 
 main h2 {
+    margin-left: 30px;
     margin-bottom: 20px;
 
 }
@@ -192,24 +196,22 @@ main span {
 }
 
 .list {
-    display: inline-block;
-    width: 87%;
+    width: 100%;
+    justify-content: center;
 
 }
 
 .list > ul {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 17px 146px;
+    width: 90%;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 56px 53px;
 
 }
 
-.list > ul > li.flex {
-    padding-top: 10px;
-
-}
-
-.list > ul .flex {
-    flex-shrink: 50;
+.list > ul >li {
+    width: 391px;
 
 }
 
@@ -221,7 +223,7 @@ main span {
 }
 
 .list > ul > li > i#icon-tag {
-    top: 34px;
+    top: 43px;
     left: 14px;
     width: 22px;
 
@@ -230,26 +232,39 @@ main span {
 .list > ul > li > h1 {
     display: inline;
     position: absolute;
-    color: var(--title-color);
     height: 0px;
-    width: 364px;
-    font-size: 1.8em;
-    padding: 24px 0px 0px 30px;
+    width: 336px;
+    font-size: 1.6em;
+    padding: 38px 0px 0px 33px;
     z-index: 1;
 
 }
 
-.list > ul > li > .flex {
-    justify-content: center;
+.list > ul > li > h1#title-box-1 {
+    color: var(--title-color-1);
 
 }
 
+.list > ul > li > h1#title-box-2 {
+    color: var(--title-color-2);
+
+}
+
+.list > ul > li > h1#title-box-3 {
+    color: var(--title-color-3);
+
+}
+
+.list > ul > li > h1#title-box-4 {
+    color: var(--title-color-4);
+
+}
 
 div.container-list {
     background-color: #0000000d;
-    height: 134px;
-    width: 391px;
-    clip-path: polygon(0% 515%, 115% 0%, 0% 0%, 0% 0%)
+    height: 199px;
+    width: 350px;
+    clip-path: polygon(0% 318%, 130% 0%, 0% 0%, 0% 0%);
 
 }
 
@@ -259,20 +274,18 @@ div.container-list {
     position: relative;
     bottom: -1px;
     left: 1px;
-    height: 130px;
-    width: 387px;
+    height: 195px;
+    width: 346px;
     padding: 0px 10px;
     font-weight: 700;
     line-height: 36px;
-    clip-path: polygon(0% 517%, 115% 0%, 0% 0%, 0% 0%)
-
+    clip-path: polygon(0% 318%, 130% 0%, 0% 0%, 0% 0%);
 }
-
 
 .list > ul > li > div.container-list > div.list-content > div.content-grid {
     position: absolute;
     width: 331px;
-    bottom: 10px;
-    left: 33px;
+    bottom: 43px;
+    left: 20px;
 
 }
