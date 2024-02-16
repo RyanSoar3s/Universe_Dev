@@ -6,7 +6,8 @@
     /* COLORS */
     --text-color: #46b1c9;
     --background-color-universe: #262fcb;
-    --main-color: #29339b;;
+    --main-color: #161c5b;
+    --background-box: #2b329d;
     --background-header: #1e2468;
     --background-color-dev: #e223c2;
     --title-color-1: #60e677;
@@ -33,14 +34,13 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    margin: 0;
-    padding: 0;
 
 
 }
 
 body {
     font-family: 'Cabin', sans-serif;
+    background-color: var(--main-color);
     overflow-x: hidden;
 
 }
@@ -59,24 +59,6 @@ a {
     text-decoration: none;
     color: white;
     position: relative;
-
-}
-
-a.link::after {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    background-color: var(--text-color);
-    height: 2px;
-    width: 0%;
-    transition: .1s ease-in-out;
-
-}
-
-a.link:hover::after {
-    width: 100%;
 
 }
 
@@ -116,6 +98,24 @@ header {
 
 }
 
+a.link::after {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: var(--text-color);
+    height: 2px;
+    width: 0%;
+    transition: .1s ease-in-out;
+
+}
+
+a.link:hover::after {
+    width: 100%;
+
+}
+
 header nav > ul > li {
     margin: 0px 45px;
 
@@ -135,12 +135,6 @@ header nav > ul > li {
 
 /* MAIN */
 
-main {
-    background-color: var(--main-color);
-
-}
-
-
 .container_section {
     flex-direction: column;
     height: 100%;
@@ -149,8 +143,6 @@ main {
 }
 
 .container_content {
-    /* background-color: var(--main-color);
-    max-width: 700px; */
     margin-top: 40px;
 
 }
@@ -210,7 +202,7 @@ main span {
 
 }
 
-.list > ul >li {
+.list > ul > li {
     width: 391px;
 
 }
@@ -271,7 +263,7 @@ main span {
 }
 
 div.container-list {
-    background-color: #0000000d;
+    background-color: #0000001a;
     height: 199px;
     width: 350px;
     clip-path: polygon(0% 318%, 130% 0%, 0% 0%, 0% 0%);
@@ -280,7 +272,7 @@ div.container-list {
 
 .list > ul > li > div.container-list > div.list-content {
     color: var(--letter-color);
-    background-color: var(--background-color-universe);
+    background-color: var(--background-box);
     position: relative;
     bottom: -1px;
     left: 1px;
