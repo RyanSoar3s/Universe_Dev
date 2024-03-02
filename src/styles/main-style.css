@@ -72,7 +72,7 @@ a, button {
 
 }
 
-ul > li {
+ul  li {
     list-style: none;
 
 }
@@ -139,7 +139,7 @@ header button {
     width: 100px;
     margin-top: 7px;
     font-size: 14px;
-    clip-path: polygon(89% 101%, 117% 0%, 0% 0%, 0% 103%);
+    clip-path: polygon(87% 101%, 117% 0%, 0% 0%, 0% 103%)
 
 }
 
@@ -323,9 +323,9 @@ main section .background-video {
     justify-content: center;
     align-items: center;
     background-color: var(--background-box);
-    height: 550px;
+    height: 475px;
     width: 770px;
-    box-shadow: inset 0px 0px 4px 3px #00000066;
+    box-shadow: inset 0px 0px 3px 3px #0000007e;
 
 }
 
@@ -349,5 +349,24 @@ main section #img-thumb > img, main section video {
 
 main section .video {
     display: none;
+
+}
+
+main section .cursos {
+    flex-direction: column; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+main section ul .content-list {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main section ul {
+    width: 100%;
 
 }
