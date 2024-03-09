@@ -183,6 +183,7 @@ main section h1 {
 }
 
 main section h2 {
+    font-size: 2em;
     margin-left: 30px;
     margin-bottom: 20px;
 
@@ -200,6 +201,11 @@ main section #universe {
 
 main section #dev {
     color: var(--background-color-dev);
+
+}
+
+main section ul {
+    width: 100%;
 
 }
 
@@ -360,13 +366,64 @@ main section .cursos {
 
 }
 
-main section ul .content-list {
+main section .cursos ul {
+    margin: 50px;
+
+}
+
+main section .cursos h2 {
+    font-size: 2.5em;
+    text-indent: 20px;
+    margin-bottom: 50px;
+
+}
+
+main section ul .classes-container {
     flex-direction: column;
     align-items: center;
 
 }
+  
+main section ul .classes {
+    background-color: var(--background-header);
+    width: 380px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0px #00000061;
 
-main section ul {
+}
+
+main section ul .classes-container .classes li {
+    color: var(--title-color-1);
+    line-height: 30px;
+    border-bottom: 1px solid var(--text-color);
+
+}
+
+main section .container-about {
+    height: 410px;
+    width: 95vw;
+    justify-content: center;
+    margin: 80px 0px;
+
+}
+
+main section .about {
+    background-color: var(--background-header);
+    height: 100%;
     width: 100%;
+    padding: 30px;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0px #00000061;
+
+}
+
+main section .container-about p {
+    color: var(--title-color-1);
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin-bottom: 30px;
 
 }
