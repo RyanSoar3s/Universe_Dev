@@ -7,18 +7,19 @@
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../icons/fontawesome/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/medias.css">
     <script src="scripts/show-contents.js" defer></script>
 
 </head>
 <body> <!--Colocar metas tag-->
     <header class="flex">
-        <!--
-            Ao clicar na lupa, conteudo some e fica o text box centralizado 
-            para digitacao e botao de buscar e fechar
-        
-        -->
-
-        <!--Lembrar de terminar o header-->
+        <div class="menu">
+            <div>
+                <span class="menuBar"></span>
+                <span class="menuBar"></span>
+                <span class="menuBar"></span>
+            </div>
+        </div>
         <div class="logo"></div>
 
         <div class="flex">
@@ -33,11 +34,8 @@
             </nav>
 
         </div>
-        <!-- <div id="search">
 
-
-        </div> -->
-        <div class="account_area flex">
+        <div class="flex account_area">
             <a class="link" href="#">Acessar</a>
             <a href="./pages/sign-in.html"><button>Registrar-se</button></a>
 
@@ -50,7 +48,9 @@
             <div class="container_section flex">
                 <div class="container_content">
                     <div class="title_section">
-                        <h1>O universo da programação em um só lugar.</h1>
+                        <div class="h1" style="width: 675px;">
+                            <h1>O universo da programação em um só lugar.</h1>
+                        </div>
                     
                     </div>
                     <div>
@@ -160,13 +160,16 @@
         <section>
             <div class="container_section flex">
                 <div class="container_content">
-                    <div class="title_section">
+                    <div class="title_section h1">
                         <h1>Conheça o nosso trabalho</h1>
 
                     </div>
 
                 <div>
-                    <h2>Forme-se como um profissional de excelência.</h2>
+                    <div class="h2">
+                        <h2>Forme-se como um profissional de excelência.</h2>
+
+                    </div>
                     
                     <div class="flex container-video">
                         <div class="flex background-video">
@@ -195,7 +198,7 @@
             <div class="container_section flex">
                 <div class="container_content">
                     <div class="title_section">
-                        <h1>Nossos cursos:</h1>
+                        <h1>Alguns dos nossos cursos:</h1>
 
                     </div>
 
@@ -282,15 +285,16 @@
             <div class="container_section flex">
                 <div class="container_content">
                     <div class="title_section">
-                        <h1>Sobre nós: </h1>
+                        <div>
+                            <h1>Sobre nós: </h1>
+
+                        </div>
 
                         <div class="flex container-about">
                             <div class="about">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, accusantium necessitatibus. Iure voluptatum nostrum sapiente, officiis, neque aperiam quas unde quibusdam exercitationem minus mollitia nobis modi, repellat minima iste cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam iure laudantium inventore impedit, in blanditiis ut, eaque fugit minima rem animi. Ipsum ratione tempora quod doloribus ipsam assumenda earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum maxime incidunt eum illum adipisci at optio excepturi mollitia aperiam! Placeat excepturi libero aliquid esse eum nesciunt iusto pariatur officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam sunt, alias veniam labore vero reprehenderit iste at nam, dolorum soluta laborum voluptatibus esse. Odit, fuga nam. Harum, dicta atque.</p>
-
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At consequuntur animi distinctio culpa dicta ex debitis, veniam delectus. Repellat neque ipsa in natus asperiores libero molestias? Eum sint eaque corrupti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet beatae facere fuga laborum nisi provident perspiciatis magni? Itaque magni unde quis, suscipit est iusto exercitationem quaerat non aspernatur sint repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo doloremque quaerat repellat animi sapiente, at eveniet est impedit necessitatibus qui odit laboriosam voluptatum iste laborum, aut error velit sequi.</p>
-
-                                
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, accusantium necessitatibus. Iure voluptatum nostrum sapiente, officiis, neque aperiam quas unde quibusdam exercitationem minus mollitia nobis modi, repellat minima iste cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam iure laudantium inventore impedit, in blanditiis ut, eaque fugit minima rem animi. Ipsum ratione tempora quod doloribus ipsam assumenda earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum maxime incidunt eum illum adipisci at optio excepturi mollitia aperiam! Placeat excepturi libero aliquid esse eum nesciunt iusto pariatur officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam sunt, alias veniam labore vero reprehenderit iste at nam, dolorum soluta laborum voluptatibus esse. Odit, fuga nam. Harum, dicta atque.</p> <br>
+     
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At consequuntur animi distinctio culpa dicta ex debitis, veniam delectus. Repellat neque ipsa in natus asperiores libero molestias? Eum sint eaque corrupti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet beatae facere fuga laborum nisi provident perspiciatis magni? Itaque magni unde quis, suscipit est iusto exercitationem quaerat non aspernatur sint repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo doloremque quaerat repellat animi sapiente, at eveniet est impedit necessitatibus qui odit laboriosam voluptatum iste laborum, aut error velit sequi.</p>                     
 
                             </div>
                         </div>
@@ -305,9 +309,29 @@
     </main>
 
     <footer>
-        <div>
-            <h1>Contatos</h1>
+        <div class="flex footer_container">
+            <div>
+                <div id="title_footer">
+                    <h1>Contatos</h1>
+                
+                </div>
 
+                <div id="contacts">
+                    <ul>
+                        <li><i class="fa-solid fa-envelope fa-lg"></i> Email: suporte_universe@gmail.com</li>
+                        <li><i class="fa-brands fa-instagram fa-lg"></i> Instagram: Uni_Dev</li>
+                        <li><i class="fa-brands fa-youtube"></i> Youtube: Universe Dev Academy</li>
+    
+                    </ul>
+                </div> 
+                
+                <h2>Acesse a nossa comunidade no Discord</h2>
+                
+                <a href="https://discord.com/" target="_blank"><button><i class="fa-brands fa-discord fa-lg"></i> Comunidade Dev</button></a>
+
+            </div>
+            
+            <p>A maior e melhor escola on-line de tecnologia no Brasil</p>
 
         </div>
 

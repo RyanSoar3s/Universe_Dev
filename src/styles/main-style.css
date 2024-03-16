@@ -17,7 +17,6 @@
     --title-color-5: #e52424;
     --title-color-6: #ff0b90;
     --letter-color: #9AB5BA;
-    /*--c5: #6c0a66;*/
 
 }
 
@@ -87,6 +86,11 @@ header {
     align-items: center;
     border-bottom: 6px solid var(--text-color);
     box-shadow: 0px 1px 4px 1px #0000007a;
+
+}
+
+header .menu {
+    display: none;
 
 }
 
@@ -164,7 +168,6 @@ main section .container_content {
 }
 
 main section .title_section {
-    width: 675px;
     margin-top: 20px;
     margin-left: 30px;
 
@@ -401,29 +404,90 @@ main section ul .classes-container .classes li {
 }
 
 main section .container-about {
-    height: 410px;
-    width: 95vw;
-    justify-content: center;
-    margin: 80px 0px;
+    color: var(--title-color-1);
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+
 
 }
 
 main section .about {
-    background-color: var(--background-header);
-    height: 100%;
     width: 100%;
     padding: 30px;
     margin-right: 40px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px 0px #00000061;
 
 }
 
-main section .container-about p {
-    color: var(--title-color-1);
-    text-align: justify;
-    font-size: 1.1em;
-    line-height: 30px;
-    margin-bottom: 30px;
+/* FOOTER */
+
+footer {
+    background-color: #021451;
+    padding: 30px;
+
+}
+
+footer .footer_container {
+    flex-direction: column;
+
+}
+
+footer h1, footer h2{
+    color: var(--text-color);
+
+}
+
+footer ul li, footer a button  {
+    color: var(--title-color-4);
+    margin: 10px 0px;
+
+}
+
+footer #contacts{
+    margin: 30px 0px 30px 20px;
+
+}
+
+footer h2 {
+    margin-bottom: 10px;
+
+}
+
+footer a {
+    margin-left: 10px;
+
+}
+
+footer a button {
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px;
+
+}
+
+footer a button::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    transition: .5s ease-out;
+
+}
+
+footer a button:hover::after {
+    width: 190px;
+    background-color: #03238a71;
+
+}
+
+footer p {
+    align-self: center;
+    font-size: 20px;
+    color: var(--background-color-universe);
+    text-shadow: 2px 2px 3px #00000080;
 
 }
