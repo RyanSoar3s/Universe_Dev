@@ -4,6 +4,7 @@
 @media screen and (max-width: 600px) {
 
     /* HEADER */
+
     header {
         justify-content: space-between;
         padding: 0px 20px;
@@ -62,6 +63,7 @@
     }
 
     /* MAIN */
+
     main section .title_section > .h1 {
         width: 390px !important;
 
@@ -69,7 +71,6 @@
 
     main section div > h1 {
         font-size: 2em;
-
 
     }
 
@@ -116,6 +117,7 @@
 @media screen and (min-width: 601px) and (max-width: 768px) {
 
     /* HEADER */
+
     header {
         justify-content: space-between;
         padding: 0px 20px;
@@ -152,6 +154,7 @@
         height: 6px;
         width: 46px;    
         margin: 1px 0px 10px 10px;
+
     }
 
 
@@ -161,6 +164,7 @@
     }
 
     /* MAIN */
+
     main section .title_section > .h1 {
         width: 530px !important;
 
@@ -194,6 +198,7 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
     /* MAIN */
+
     main section .list {
         padding-left: 20px;
 

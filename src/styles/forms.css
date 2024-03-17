@@ -1,7 +1,83 @@
 @charset "UTF-8";
 
-form input{
+/* GENERAL SETTINGS */
+
+body {
+    background-image: linear-gradient(to bottom, #161c5b 40%, #262fcb);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.flex {
+    display: flex;
+
+}
+
+/* MAIN */
+
+main section .container-form {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main section .container-form .form {
+    background-color: #2b329d;
+    height: 290px;
+    width: 330px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px -1px #0000008f;
+
+}
+
+main section form {
+    flex-direction: column;
+    height: 290px;
+    justify-content: center;
+    padding: 0px 35px;
+
+}
+
+main section form label {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+main section form input {
     display: block;
-    outline: none               ;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+main section form label[for=password] {
+    margin-top: 15px;
+
+}
+
+main section form input[type=submit] {
+    background-color: #d1d1d1;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+
+}
+
+main section form input[type=submit]:hover {
+    background-color: #b9b9b9;
+
+}
+
+main section form input {
+    height: 25px;
+    margin: 10px 0px;  
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
 
 }

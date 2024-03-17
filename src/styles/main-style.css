@@ -21,6 +21,7 @@
 }
 
 /* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -129,6 +130,7 @@ header .account_area {
     flex-direction: column;
     height: 50px;
     justify-content: space-between;
+    padding-right: 15px;
 
 }
 
@@ -304,22 +306,24 @@ main section div.container-list {
 main section .list > ul > li > div.container-list > div.list-content {
     color: var(--letter-color);
     background-color: var(--background-box);
-    position: relative;
-    bottom: -1px;
+    position: relative; 
     left: 1px;
+    bottom: -1px;
     height: 195px;
     width: 346px;
     padding: 0px 10px;
     font-weight: 700;
     line-height: 36px;
     clip-path: polygon(0% 318%, 130% 0%, 0% 0%, 0% 0%);
+
 }
 
 main section .list > ul > li > div.container-list > div.list-content > div.content-grid {
     position: absolute;
-    width: 331px;
-    bottom: 43px;
+    width: 331px;  
     left: 20px;
+    bottom: 43px;
+
 
 }
 
