@@ -128,9 +128,10 @@ header nav > ul > li {
 
 header .account_area {
     flex-direction: column;
-    height: 50px;
+    height: 57px;
     justify-content: space-between;
     padding-right: 15px;
+    margin-left: 8px;
 
 }
 
