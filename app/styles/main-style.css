@@ -37,6 +37,11 @@ html, body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     font-family: 'Cabin', sans-serif;
     background-color: var(--main-color);
@@ -123,6 +128,7 @@ header .link:hover::after {
 
 header nav > ul > li {
     margin: 0px 45px;
+    cursor: pointer;
 
 }
 

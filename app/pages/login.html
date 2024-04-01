@@ -9,10 +9,14 @@
 </head>
 <body>
     <main>
+        
+
         <section>
             <div class="flex container-form">
-                <div class="form">
-                    <form class="flex" id="login-form" action="../../src/server/user-data/find-login-data.php" method="post">
+                <div class="form flex">
+                    <span id="error"></span>
+                    
+                    <form class="flex" id="login-form" action="../../src/server/user-data/login-data.php" method="POST">
                         <label for="email">Digite seu email: </label>
                         <input type="text" name="email" id="email" data-email="email">
                         <span class="invalid-data" style="color: red;"></span>
@@ -26,6 +30,12 @@
                 </div>
 
             </div>
+
+            <script>
+                if (window.location.search.indexOf("erro=1") > -1) 
+                    document.getElementById("error").textContent = "Usuário ou senha incorreto."
+
+            </script>
 
         </section>
 

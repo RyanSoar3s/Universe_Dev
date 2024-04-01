@@ -9,6 +9,7 @@ body {
 
 }
 
+
 .flex {
     display: flex;
 
@@ -23,22 +24,36 @@ main section .container-form {
     
 }
 
+
 main section .container-form .form {
     background-color: #2b329d;
-    height: 290px;
+    justify-content: center;
+    height: 296px;
     width: 330px;
     border-radius: 15px;
     box-shadow: 2px 2px 8px -1px #0000008f;
+    
+}
+
+
+main #error {
+    color: red;
+    position: absolute;
+    top: 175px;
+    font-weight: 700;
+    font-size: 17px;
 
 }
+
 
 main section form {
     flex-direction: column;
     height: 290px;
     justify-content: center;
-    padding: 0px 35px;
+    padding: 7px 35px 0px 35px;
 
 }
+
 
 main section form label {
     font-size: 18px;
@@ -46,17 +61,12 @@ main section form label {
 
 }
 
-main section form input {
-    display: block;
-    outline: none;
-    padding-left: 10px;
-
-}
 
 main section form label[for=password] {
     margin-top: 15px;
 
 }
+
 
 main section form input[type=submit] {
     background-color: #d1d1d1;
@@ -67,14 +77,19 @@ main section form input[type=submit] {
 
 }
 
+
 main section form input[type=submit]:hover {
     background-color: #b9b9b9;
 
 }
 
+
 main section form input {
+    display: block;
     height: 25px;
+    width: 235px;
     margin: 10px 0px;  
+    padding-left: 10px;
     outline: none;
     border: none;
     border-radius: 10px;
