@@ -1,5 +1,5 @@
 <?php 
-    require "validate-data.php";
+    require("validate-data.php");
 
     $email = $_POST["email"];
     $pass = $_POST["password"];
