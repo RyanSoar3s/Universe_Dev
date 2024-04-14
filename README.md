@@ -9,7 +9,7 @@ A ideia do site é ter uma página principal que mostre um pouco dos cursos pres
 irá apresentar os preços de cada curso e também mostrar mais das vantagens de se estudar no Universe Dev. Inicialmente, essa parte dos preços ainda não foi implementada, mas, futuramente,
 poderei fazer isso. 
 
-##Segue algumas imagens do site:
+## Segue algumas imagens do site:
 
 ### Página inicial:
 
